@@ -1,0 +1,141 @@
+body
+{
+    background-color : #009788;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+}
+
+
+p{
+    color:white;
+    font-size: 10vw;
+    
+}
+
+.player-container {
+  position: relative;
+    height: 330px;
+    align-content: center;
+    
+  
+}
+
+/*******************SVG Circles *****************************/
+
+.player-container svg {
+  position: absolute;
+  transform: translate(-7%, -7%) rotate(-90deg);
+  pointer-events: none;
+    height : 100%;
+    top: 10%;
+    left : -5vw;
+}
+
+
+.player-container svg circle {
+  transition: all 0.5s ease-in-out;
+}
+
+#clock{
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+.buttonSection{
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.roundButton{
+    border-radius: 50%;
+    background-color: #009788;
+    border: 0;
+    width: 5rem;
+    font-size: 1rem;
+}
+
+/****************** Start and cancel button*******************/
+
+.button1{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    cursor: pointer;
+    width: 49%;
+}
+
+.button2
+{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    cursor: pointer;
+    width : 59%;
+}
+
+
+
+
+
+.selector{
+    background-clip: white;
+    padding: .8rem 1.4rem .9rem .8rem;
+    width: 30%;
+    border-radius: .5rem;
+    
+    font-size: 1rem;
+    text-align: center;
+     color: white;
+  height: 10%;
+  background: none;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: all 0.5s ease;
+}
+
+
+/************************Responsive design ***************************/
+
+@media only screen and (min-width: 523px)
+{
+    .player-container svg 
+    {
+        left : 20%;
+    }
+}
+
+
+@media only screen and (min-width: 837px)
+{
+    .player-container svg 
+    {
+        left : 25%;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 985px)
+{
+    .player-container svg 
+    {
+        left : 30%;
+    }
+}
+
+
+
+@media only screen and (min-width: 1189px)
+{
+    .player-container svg 
+    {
+        left : 35%;
+    }
+}
